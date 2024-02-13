@@ -14,4 +14,12 @@ export class AppComponent {
   goRouteGaurdModule(){
      this.router_.navigateByUrl('routeGaurd/goCanActivate');
   }
+  getElemetRef(_num: string){
+    let elemetRef=document.getElementById(_num);
+    if(elemetRef?.style.display=='none'){
+       elemetRef.style.display='block';
+    }else if(elemetRef?.style.display=='block'){
+     elemetRef.style.display='none';
+    }
+  }
 }

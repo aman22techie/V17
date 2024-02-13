@@ -304,3 +304,11 @@
     float: left;
     overflow: scroll;
   }
+  .card.card-small {
+    width: 168px;
+    height: fit-content;
+}
+.moveUp{
+  position: relative;
+  bottom: 15px;
+}
