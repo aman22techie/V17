@@ -2,11 +2,12 @@ import { Injectable, inject } from "@angular/core";
 import { ActivatedRouteSnapshot, CanActivateFn, RouterStateSnapshot } from "@angular/router";
 
 @Injectable()
-class UserToken {}
+export class UserToken {}
 
 @Injectable()
 export class canActivateService {
   canActivate(currentUser: UserToken): boolean {
+    debugger;
     // if token is valid return true other wise return false.
     let isValid=true;
     if(isValid){
@@ -18,7 +19,7 @@ export class canActivateService {
   }
 }
 
-const canActivateTeam: CanActivateFn = (
+export const canActivateTeam: CanActivateFn = (
   route: ActivatedRouteSnapshot,
   state: RouterStateSnapshot,
 ) => {
