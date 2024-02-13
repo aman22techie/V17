@@ -3,14 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoginComponent } from './modules/authentication/login/login.component';
-import { PortalComponent } from './modules/dashboard/portal/portal.component';
-import { DashboardModule } from './modules/dashboard/dashboard/dashboard.module';
+import { ValidateCanactivateComponent } from './modules/routeGaurd/validate-canactivate/validate-canactivate.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    ValidateCanactivateComponent
   ],
   imports: [
     BrowserModule,
