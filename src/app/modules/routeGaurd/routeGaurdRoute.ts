@@ -9,10 +9,6 @@ const routes: Routes = [
     path: 'goCanActivate',
     component: ValidateCanactivateComponent,
     canActivate: [canActivateService],
-    canActivateChild:[],
-    children:[{
-
-    }]
   },
 ];
 
